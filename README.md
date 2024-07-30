@@ -1,11 +1,11 @@
-# Getting Started with Create React App
+# Desafio
+O QUE DESENVOLVER?
+Você deverá construir um projeto contendo:
+• Listagem de heróis.
+• Filtro de busca com entrada de dados.
+• Modal para exibição do herói vencedor em uma batalha.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
+##Executar o projeto
 ### `npm start`
 
 Runs the app in the development mode.\
