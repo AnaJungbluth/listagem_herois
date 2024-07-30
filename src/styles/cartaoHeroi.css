@@ -1,0 +1,19 @@
+.cartao-heroi {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  text-align: center; 
+}
+
+.cartao-heroi.selecionado {
+  border-color: #007bff;
+  background-color: #f0f8ff;
+  transform: scale(1.05);
+}
+
+.cartao-heroi h2 {
+  font-size: 1.2em;
+  margin: 0; 
+}

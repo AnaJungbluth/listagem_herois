@@ -71,10 +71,30 @@ button:hover {
 }
 
 .lista-herois {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .batalha-container {
+    margin-top: 20px; /* Espaço entre a lista de heróis e o botão */
+    text-align: center; /* Centraliza o botão */
+  }
+  
+  .batalha-container button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .batalha-container button:hover {
+    background-color: #0056b3;
+  }  
 
 .paginacao {
   margin-top: 20px;

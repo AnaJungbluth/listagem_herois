@@ -2,18 +2,21 @@ import React from 'react';
 import '../styles/modalBatalhaHeroi.css';
 
 const ModalBatalhaHeroi = ({ vencedor, onFechar }) => {
-  if (!vencedor) return null;
-
   return (
-    <div className="modal-batalha">
+    <div className="modal">
       <div className="modal-conteudo">
-        <h2>Herói Vencedor da Batalha</h2>
-        <img src={vencedor.images.lg} alt={vencedor.name} className="imagem-vencedor" />
-        <p>Nome: {vencedor.name}</p>
-        <p>Força: {vencedor.powerstats.strength}</p>
-        <p>Velocidade: {vencedor.powerstats.speed}</p>
-        <p>Inteligência: {vencedor.powerstats.intelligence}</p>
-        <button onClick={onFechar}>Fechar</button>
+        <img src={vencedor.images.md} alt={vencedor.name} />
+        <div className="informacoes">
+          <h2>Herói Vencedor</h2>
+          <h3>{vencedor.name}</h3>
+          <p><strong>Força:</strong> {vencedor.powerstats.strength}</p>
+          <p><strong>Inteligência:</strong> {vencedor.powerstats.intelligence}</p>
+          <p><strong>Velocidade:</strong> {vencedor.powerstats.speed}</p>
+          <p><strong>Duração:</strong> {vencedor.powerstats.durability}</p>
+          <p><strong>Poder:</strong> {vencedor.powerstats.power}</p>
+          <p><strong>Combate:</strong> {vencedor.powerstats.combat}</p>
+          <button className='botao' onClick={onFechar}>Fechar</button>
+        </div>
       </div>
     </div>
   );
